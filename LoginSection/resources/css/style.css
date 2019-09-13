@@ -1,0 +1,163 @@
+a:hover {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0;
+    overflow: hidden;
+}
+ul li {
+    list-style-type: none;
+}
+ul li a {
+    display: inline-block;
+    float: left;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #e7a61a;
+    border: 1px solid #e7a61a;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px; 
+    transition: all .4s ease;
+}
+ul li a:hover {
+    color: white;
+    background: #e7a61a;
+}
+/* -----------Home */
+.title {
+    color: #e7a61a;
+    margin-left: 20px;
+}
+span.mess {
+    display: inline-block;
+    color: red;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.user {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    background: #e7a61a;
+    box-shadow: 10px 10px 38px -17px rgba(0, 0, 0, .1);
+}
+
+.user:hover {
+    background: #916a1b;
+}
+
+.list-user {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.delete {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid red;
+    color: red;
+    border-radius: 4px;
+    padding: 6px 12px;
+    transition: all .4s ease;
+    text-decoration: none;
+}
+.delete:hover {
+    background: red;
+    color: white;
+}
+.update {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 4px;
+    padding: 6px 12px;
+    transition: all .4s ease;
+    text-decoration: none;
+}
+.update:hover {
+    background: blue;
+    color: white;
+}
+/* -----------Login-Register */
+form {
+    border: 1px solid blueviolet;
+    padding: 5px 20px 20px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: brown;
+}
+
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.input label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.input input {
+    padding: 6px 10px;
+    outline: 0;
+    border: 1px solid #4d4d4d;
+}
+
+.input:nth-child(3) {
+    border: none;
+}
+
+.input input:focus {
+    border: 1px solid blueviolet;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.sign-in {
+    display: block;
+    width: 100%;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    outline: 0;
+    transition: all .4s ease;
+    text-transform: uppercase;
+}
+
+.sign-in:hover {
+    color: white;
+    background: blueviolet;
+}
+/* -----------Blog */
+span.name {
+    color: red;
+    text-transform: uppercase;
+}
+
+.btn-logout {
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid blueviolet;
+    outline: none;
+    color: blueviolet;
+    border-radius: 4px;
+    transition: all .4s ease;
+}
+
+.btn-logout:hover {
+    background: blueviolet;
+    color: white;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Danh sach User</a>
+                <a href="/sign-in">
+                    Dang nhap
+                </a>
+                <a href="/register">
+                    Dang ki
+                </a>
+                <a href="/logout">
+                    Dang xuat
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <form action="/update" method="post">
+        <h2>Update Form</h2><div class="input">
+            <label for="">UserID</label>
+            <input type="text" name="Name" value="{{ .userUpdate.ID}}" readonly/>
+        </div>
+        <div class="input">
+            <label for="">Username</label>
+            <input type="text" name="Name" value="{{ .userUpdate.Name}}"/>
+        </div>
+        <div class="input">
+            <label for="">Password</label>
+            <input type="text" name="Password" value="{{ .userUpdate.Password}}"/>
+        </div>
+        <div class="input">
+            <input type="submit" value="update" class="sign-in" />
+        </div>
+    </form>
+</body>
+
+</html>
